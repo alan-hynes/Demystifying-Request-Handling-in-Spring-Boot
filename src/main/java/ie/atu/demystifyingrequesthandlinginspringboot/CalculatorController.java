@@ -12,4 +12,8 @@ public class CalculatorController {
     @GetMapping
     public String subtract(@RequestParam int num1, int num2) {
             return "Answer: " + (num1 - num2); }
+
+    @GetMapping
+    public String multiply(@RequestParam int num1, int num2) {
+        return "Answer: " + (num1 * num2); }
 }
